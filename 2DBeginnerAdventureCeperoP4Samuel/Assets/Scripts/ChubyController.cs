@@ -65,6 +65,8 @@ public class ChubyController : MonoBehaviour
     {
         if(amount < 0)
         {
+            animator.SetTrigger("Hit");
+
             if(isInvincible)
             {
                 return;
